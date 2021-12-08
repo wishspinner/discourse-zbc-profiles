@@ -1,0 +1,6 @@
+{
+  "name": "ZBC User Profiles",
+  "about_url": "https://github.com/wishspinner/discourse-zbc-profiles/blob/main/discourse-zbc-profiles/about.json",
+  "license_url": "https://github.com/wishspinner/discourse-zbc-profiles/blob/main/discourse-zbc-profiles/LICENSE",
+  "component": true
+}
