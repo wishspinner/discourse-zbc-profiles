@@ -6,8 +6,12 @@
 <!-- above profile area -->
 
     <div class="container {{if viewingSelf "viewing-self"}} {{if model.profile_hidden "profile-hidden"}} {{primaryGroup}}">
+
       {{#d-section class="user-main"}}
         <section class="{{if collapsedInfo "collapsed-info"}} about {{if hasProfileBackgroundUrl "has-background" "no-background"}}" >
+
+<!-- -->
+
           {{#unless collapsedInfo}}
             {{#if showStaffCounters}}
               <div class="staff-counters">
@@ -50,16 +54,20 @@
                     {{/link-to}}
                   </div>
                 {{/if}}
-              </div>
-            {{/if}}
-            <div class="user-profile-image" style={{model.profileBackgroundUrl}}></div>
+              </div><!-- ./staff counters -->
+            {{/if}} {{!-- end if show staff counters --}}
+
           {{/unless}}
+
+          <!-- -->
+
+          <div class="user-profile-image" style={{model.profileBackgroundUrl}}></div>
 
 <!-- profile top/background end -->
 
-    <div class="user-profile-sidebar">
+        <div class="user-profile-sidebar">
 
-        <h1>Hello!</h1>
+          <h1>Hello!</h1>
 
           <div class="details">
             <div class="primary">
@@ -193,8 +201,8 @@
                 {{/if}}
     
                 {{plugin-outlet name="user-profile-primary" args=(hash model=model)}}
-              </div>
-            </div>
+              </div><!-- ./primary-textual -->
+            </div><!-- ./primary -->
 
 <!-- user basic info -->
 
@@ -249,14 +257,17 @@
                   {{/if}}
                 </dl>
                 {{plugin-outlet name="user-profile-secondary" args=(hash model=model)}}
-              </div>
+              </div><!-- ./secondary -->
             {{/unless}}
-          </div>
-        </section>
+          </div><!-- ./details -->
+
+        </div><!-- ./user-profile-sidebar -->
+
+    </section>
 
 <!-- user dates and such -->
 
-    </div><!-- ./user-profile-sidebar -->
+    
 
     <div class="user-profile-content-area">
 
@@ -288,15 +299,17 @@
                 <li class="preferences">{{#link-to 'preferences'}}{{d-icon "cog"}}{{i18n 'user.preferences'}}{{/link-to}}</li>
               {{/if}}
             {{/mobile-nav}}
-          </section>
+          </section><!-- ./user primary nav -->
         {{outlet}}
-      </div>
+      </div><!-- ./user content wrapper -->
+
+      </div><!-- ./user-profile-content-area -->
       {{/d-section}}
 
-    </div><!-- ./user-profile-content-area -->
-    </div>
+    
+    </div><!-- ./container -->
 
     <!-- profile body/navigation -->
-    ​
-    
+
+
     </script>
