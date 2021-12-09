@@ -17,6 +17,10 @@
    float:left;
 }
 
+.user-content-wrapper {
+   width: 100% !important;
+}
+
 .user-main .about.collapsed-info .details .primary .avatar {
    width: unset;
    height:unset;
@@ -26,3 +30,7 @@
 .user-main .about .details img.avatar {float:unset;}
 
 .user-main .about.collapsed-info .details .primary {text-align:center;}
+
+.user-main .about .controls {text-align: unset;}
+
+.user-main .about .details .controls .btn {padding: 11px 9px;}
