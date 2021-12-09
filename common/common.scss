@@ -8,15 +8,21 @@
    SECTION
 -----------------------------------------*/
 .user-profile-sidebar {
-
    width: 25%;
    float:left;
-
 }
 
 .user-profile-content-area {
-
    width: 75%;
    float:left;
-
 }
+
+.user-main .about.collapsed-info .details .primary .avatar {
+   width: unset;
+   height:unset;
+   margin: 0 auto;
+}
+
+.user-main .about .details img.avatar {float:unset;}
+
+.user-main .about.collapsed-info .details .primary {text-align:center;}
