@@ -1,6 +1,10 @@
 
 <script type="text/x-handlebars" data-template-name="user" version="2.2.0">
     {{plugin-outlet name="above-user-profile" tagName="" args=(hash model=model)}}
+
+
+<!-- above profile area -->
+
     <div class="container {{if viewingSelf "viewing-self"}} {{if model.profile_hidden "profile-hidden"}} {{primaryGroup}}">
       {{#d-section class="user-main"}}
         <section class="{{if collapsedInfo "collapsed-info"}} about {{if hasProfileBackgroundUrl "has-background" "no-background"}}" >
@@ -50,6 +54,11 @@
             {{/if}}
             <div class="user-profile-image" style={{model.profileBackgroundUrl}}></div>
           {{/unless}}
+
+<!-- profile top/background end -->
+
+    <div class="user-profile-sidebar">
+
           <div class="details">
             <div class="primary">
               {{user-profile-avatar user=model tagName=""}}
@@ -96,6 +105,8 @@
                 </ul>
               </section>
     
+<!-- message and admin buttons -->
+
               <div class="primary-textual">
                 <div class="user-profile-names">
                   <h1 class={{if nameFirst "full-name" "username"}}>{{if nameFirst model.name (format-username model.username)}} {{user-status model currentUser=currentUser}}</h1>
@@ -182,6 +193,9 @@
                 {{plugin-outlet name="user-profile-primary" args=(hash model=model)}}
               </div>
             </div>
+
+<!-- user basic info -->
+
             {{#unless collapsedInfo}}
               <div class='secondary' id='collapsed-info-panel'>
                 <dl>
@@ -237,6 +251,13 @@
             {{/unless}}
           </div>
         </section>
+
+<!-- user dates and such -->
+
+    </div><!-- ./user-profile-sidebar -->
+
+    <div class="user-profile-content-area">
+
         <div class='user-content-wrapper'>
           <section class="user-primary-navigation">
             {{#mobile-nav class='main-nav' desktopClass="nav nav-pills user-nav"}}
@@ -269,7 +290,11 @@
         {{outlet}}
       </div>
       {{/d-section}}
+
+    </div><!-- ./user-profile-content-area -->
     </div>
+
+    <!-- profile body/navigation -->
     ​
     
     </script>
