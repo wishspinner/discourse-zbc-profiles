@@ -42,7 +42,9 @@
 
 .user-main .about.collapsed-info .details .primary .avatar {width:180px; height:180px; max-width:77%; max-height:77%;}
 
-.has-background .user-profile-avatar {margin-top: -111px;}
+.has-background .user-profile-avatar {margin-top: -111px; margin-bottom:23px;}
+
+.user-profile-avatar div:first-of-type {position:absolute; left:50%; top:105%;}
 
 .user-main .about .details .primary {text-align:center;}
 
