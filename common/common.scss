@@ -54,3 +54,5 @@
 .user-main .about .secondary dl div {display:block; font-size: 0.8em;}
 
 .user-secondary-navigation .nav-stacked a {display:inline-block; float:left;}
+
+.user-gallery-page .noshow, .user-preferences-page .noshow, .user-badges-page .noshow, .user-invites-page .noshow, .user-notifications-page .noshow {display:none !important;}
