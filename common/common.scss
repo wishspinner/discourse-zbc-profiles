@@ -59,7 +59,9 @@
    right:unset;
 }
 
-.controls ul { margin:0 11px 0 0;}
+.controls ul { display:inline-block; margin:0 auto;}
+
+.controls ul li {display:inline-block; float:left;}
 
 .user-main .about .controls {text-align: unset; float:unset;}
 
