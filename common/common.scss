@@ -56,3 +56,5 @@
 .user-secondary-navigation .nav-stacked a {display:inline-block; float:left;}
 
 .user-gallery-page .noshow, .user-preferences-page .noshow, .user-badges-page .noshow, .user-invites-page .noshow, .user-notifications-page .noshow {display:none !important;}
+
+.user-gallery-page #top-row-container, .user-preferences-page #top-row-container, .user-badges-page #top-row-container, .user-invites-page #top-row-container, .user-notifications-page #top-row-container {display:none !important;}
