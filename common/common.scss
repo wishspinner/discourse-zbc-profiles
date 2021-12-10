@@ -78,3 +78,9 @@
 .public-user-fields, .user-profile-location {display:inline-block; float:left; margin:unset; margin-right:23px;}
 
 .user-sub-intro {display:inline-block; width:auto; margin:0 auto 11px;}
+
+.user-content-wrapper .user-primary-navigation {grid-column-start:2;}
+
+.nav-pills>li>a.active {background-color:#191a19;}
+
+.user-main ul.main-nav {margin-bottom:0px;}
