@@ -8,12 +8,12 @@
    SECTION
 -----------------------------------------*/
 .user-profile-sidebar {
-   width: 25%;
+   width: 20%;
    float:left;
 }
 
 .user-profile-content-area {
-   width: 75%;
+   width: 80%;
    float:left;
 }
 
@@ -31,6 +31,15 @@
 
 .user-main .about.collapsed-info .details .primary {text-align:center;}
 
-.user-main .about .controls {text-align: unset;}
+.details .controls {
+   position:unset;
+   right:unset;
+}
+
+.controls ul { margin:0 11px 0 0;}
+
+.user-main .about .controls {text-align: unset; float:unset;}
 
 .user-main .about .details .controls .btn {padding: 11px 9px;}
+
+.ssecondary dl div {display:block; font-size: 0.8em;}
