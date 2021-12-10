@@ -27,6 +27,13 @@
    margin: 0 auto;
 }
 
+.user-main .user-profile-image {
+   position:relative;
+   width:calc(100% + 22em);
+   left: -11em;
+   right: -11em;
+}
+
 .user-main .about .details img.avatar {float:unset;}
 
 .user-main .about.collapsed-info .details .primary .avatar {max-width:77%; max-height:77%;}
